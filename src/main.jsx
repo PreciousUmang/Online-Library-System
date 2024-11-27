@@ -9,6 +9,7 @@ import Homepage from './components/Homepage.jsx'
 import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
 import ErrorPage from './components/ErrorPage.jsx'
+import Booklist from './components/Booklist.jsx'
 
 const appRouter = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const appRouter = createBrowserRouter([
       {
         path: "about",
         element: <About />
+      },
+      {
+        path: "books",
+        element: <Booklist />
       }],
     errorElement: <ErrorPage />,
   }
