@@ -7,7 +7,7 @@ import { Outlet } from 'react-router'
 
 function App() {
   return (
-    <div className='text-darkAccent font-afacad'>
+    <div className='text-darkAccent font-afacad min-h-screen'>
       <Header />
       <Outlet />
 

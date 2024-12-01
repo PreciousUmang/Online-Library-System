@@ -8,13 +8,12 @@ import { useState } from "react";
 function Booklist() {
 
     const [search, setSearch] = useState('')
-    const [filteredBooks, setFilteredBooks] = useState('books')
+    const [filteredBooks, setFilteredBooks] = useState(books)
 
 
     function handleClick() {
         let filtered = books.filter(book => book.title.toLowerCase().includes(search.toLowerCase()))
         setFilteredBooks(filtered);
-        console.log("Books", filtered)
     }
 
     return (

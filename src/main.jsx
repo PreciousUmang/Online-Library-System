@@ -10,6 +10,7 @@ import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
 import ErrorPage from './components/ErrorPage.jsx'
 import Booklist from './components/Booklist.jsx'
+import BookDetails from './components/BookDetails.jsx'
 
 const appRouter = createBrowserRouter([
   {
@@ -31,7 +32,11 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "books",
-        element: <Booklist />
+        element: <Booklist />,
+      },
+      {
+        path: "book/:id",
+        element: <BookDetails />
       }],
     errorElement: <ErrorPage />,
   }
