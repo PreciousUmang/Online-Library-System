@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div className="p-8 bg-secondary text-primary" style={{minHeight:"calc(100vh-96px)"}}>
+    <div className="min-h-screen flex flex-col bg-secondary text-primary" >
       <h1 className="text-4xl font-bold text-center mb-6 text-accent">
         Contact Me
       </h1>
