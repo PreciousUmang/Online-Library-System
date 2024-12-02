@@ -7,7 +7,7 @@ import { Outlet } from 'react-router'
 
 function App() {
   return (
-    <div className='text-darkAccent font-afacad min-h-screen'>
+    <div className='flex flex-col min-h-[calc(100vh-6rem)] font-afacad text-darkAccent overflow-hidden'>
       <Header />
       <Outlet />
 

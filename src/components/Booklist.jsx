@@ -17,9 +17,9 @@ function Booklist() {
     }
 
     return (
-        <div className="m-8">
+        <div className="p-8">
             <SearchBar setSearch={setSearch} handleClick = {handleClick}/>
-            <h1 className="text-3xl text-center p-4">Browse Books</h1>
+            <h1 className="p-4 text-3xl text-center">Browse Books</h1>
             <div className="flex flex-wrap justify-center">
                 {filteredBooks.map(book =>
                     <Bookcard key={book.id} book={book} />

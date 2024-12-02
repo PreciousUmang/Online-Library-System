@@ -1,39 +1,39 @@
 function Contact() {
   return (
-    <div className="min-h-screen flex flex-col bg-secondary text-primary" >
-      <h1 className="text-4xl font-bold text-center mb-6 text-accent">
+    <div className="flex flex-col justify-center bg-secondary min-h-[calc(100vh-6rem)] text-primary" >
+      <h1 className="mb-6 font-bold text-4xl text-accent text-center">
         Contact Me
       </h1>
-      <p className="text-lg text-center mb-4">
+      <p className="mb-4 text-center text-lg">
         Feel free to reach out for collaborations or inquiries.
       </p>
       <div className="flex justify-center">
-        <div className="bg-darkAccent p-6 rounded-lg shadow-lg w-1/2">
+        <div className="bg-darkAccent shadow-lg p-6 rounded-lg w-1/2">
           <form className="space-y-4">
             <input
               type="text"
               placeholder="Your Name"
-              className="w-full p-3 rounded-md bg-primary text-darkAccent focus:outline-none focus:ring-2 focus:ring-accent"
+              className="bg-primary p-3 rounded-md focus:ring-2 focus:ring-accent w-full text-darkAccent focus:outline-none"
             />
             <input
               type="email"
               placeholder="Your Email"
-              className="w-full p-3 rounded-md bg-primary text-darkAccent focus:outline-none focus:ring-2 focus:ring-accent"
+              className="bg-primary p-3 rounded-md focus:ring-2 focus:ring-accent w-full text-darkAccent focus:outline-none"
             />
             <textarea
               placeholder="Your Message"
-              className="w-full p-3 rounded-md bg-primary text-darkAccent focus:outline-none focus:ring-2 focus:ring-accent"
+              className="bg-primary p-3 rounded-md focus:ring-2 focus:ring-accent w-full text-darkAccent focus:outline-none"
             />
             <button
               type="submit"
-              className="w-full py-3 bg-accent text-primary rounded-md hover:bg-darkAccent duration-300 transform transition"
+              className="bg-accent hover:bg-darkAccent py-3 rounded-md w-full text-primary transform transition duration-300"
             >
               Send Message
             </button>
           </form>
         </div>
       </div>
-      <p className="text-center mt-8">Or reach me directly at: <a href="mailto:"><strong className="hover:rounded-md hover:p-1 hover: hover:bg-accent duration-300">umang@technologist.com</strong></a>
+      <p className="mt-8 text-center">Or reach me directly at: <a href="mailto:"><strong className="hover:bg-accent hover:p-1 hover:rounded-md hover: duration-300">umang@technologist.com</strong></a>
       </p>
     </div>
   );

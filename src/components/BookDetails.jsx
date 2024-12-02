@@ -1,5 +1,6 @@
-import { useParams } from "react-router"
+import { useParams } from "react-router";
 import { books } from "../utils/Mockdata";
+import { Link } from "react-router";
 
 function BookDetails() {
     const { id } = useParams();
@@ -12,14 +13,16 @@ function BookDetails() {
     }
 
     return (
-        <div>
-            <h1>{book.title}</h1>
-            <div className="flex justify-between items-center">
-                <p>{book.publishedDate}</p>
-                <p>{book.author}</p>
+        <div className="flex flex-col justify-center items-center space-y-4 p-8">
+            <h1 className="font-bold text-3xl">{book.title}</h1>
+            
+            <img src={book.coverImage} alt={book.title} className="h-72"/>
+            <div className="flex md:flex-row flex-col justify-between items-center md:w-1/2 lg:w-1/3">
+                <p>Published on : {book.publishedDate}</p>
+                <p className="italic">Author : {book.author}</p>
             </div>
-            <img src={book.coverImage} alt={book.title} />
-            <h2>{book.description}</h2>
+            <p className="px-8 md:px-16 lg:px-32">{book.description}</p>
+            <Link to = "/books" className="bg-accent p-2 rounded-md hover:text-primary hover:scale-90 transform transition-all duration-300"><button>Back to Library</button></Link>
         </div>
     )
 }

@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 function Bookcard({ book }) {
     return (
         <Link to = {`/book/${book.id}`}>
-            <div className="w-60 m-4 p-4 border-2 border-darkAccent rounded-lg shadow-lg hover:scale-105 transition transform">
+            <div className="border-2 border-darkAccent shadow-accent shadow-lg m-4 p-4 rounded-lg w-60 h-96 hover:scale-105 transform transition">
                 <img
                     src={book.coverImage}
                     alt={book.title}
-                    className="w-full h-40 object-cover rounded-md"
+                    className="rounded-md w-full h-48 object-cover"
                 />
-                <h2 className="text-xl font-bold mt-4">{book.title}</h2>
-                <p className="text-sm italic text-darkAccent">by {book.author}</p>
-                <p className="text-sm mt-2">{book.description.slice(0, 100)}...</p>
+                <h2 className="mt-4 font-bold text-xl">{book.title}</h2>
+                <p className="text-darkAccent text-sm italic">by {book.author}</p>
+                <p className="mt-2 text-sm">{book.description.slice(0, 100)}...</p>
             </div>
         </Link>)
 }
