@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { useParams } from "react-router-dom";
 import { books } from "../utils/Mockdata";
 import { Link } from "react-router";
 
@@ -6,7 +6,6 @@ function BookDetails() {
     const { id } = useParams();
 
     const book = books.find((b) => b.id === parseInt(id));
-    console.log("Book ID from URL:", id);
     if (!book) {
         return
         <p className="text-center text-red-500">Book not found!</p>
