@@ -18,7 +18,7 @@ A modern web application built using React to manage and explore books. It featu
 2. Navigate to Project Directory in your Code Editor:
    ```bash
    cd /"Project Name"
-```
+   ```
    
 3. Install dependencies:
    ```bash
