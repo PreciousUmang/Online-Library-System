@@ -1,12 +1,13 @@
-import { books } from "../utils/Mockdata"
 import { useParams } from "react-router-dom"
 import Bookcard from "./Bookcard";
+import { useOutletContext } from "react-router-dom";
 
 function CategoryBooks() {
     const { category } = useParams()
+    const { booksData } = useOutletContext();
     if (!category) return <p className="text-center">Invalid category!</p>;
     
-    const filteredBooks = books.filter(
+    const filteredBooks = booksData.filter(
         (book) => book.category?.toLowerCase() === category.toLowerCase()
     );
 

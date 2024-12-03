@@ -8,7 +8,7 @@ function Header() {
             <ul className="flex space-x-2 font-bold text-primary">
                 <Link className="hover:bg-primary p-3 hover:rounded-ss-2xl hover:rounded-ee-2xl hover:text-darkAccent duration-300" to="/">Home</Link>
                 <Link className="hover:bg-primary p-3 hover:rounded-ss-2xl hover:rounded-ee-2xl hover:text-darkAccent duration-300" to="/books">Browse Books</Link>
-                <Link className="hover:bg-primary p-3 hover:rounded-ss-2xl hover:rounded-ee-2xl hover:text-darkAccent duration-300" to="/">Add Book</Link>
+                <Link className="hover:bg-primary p-3 hover:rounded-ss-2xl hover:rounded-ee-2xl hover:text-darkAccent duration-300" to="/addNewBook">Add Book</Link>
                 <Link className="hover:bg-primary p-3 hover:rounded-ss-2xl hover:rounded-ee-2xl hover:text-darkAccent duration-300" to="/about">About</Link>
                 <Link className="hover:bg-primary p-3 hover:rounded-ss-2xl hover:rounded-ee-2xl hover:text-darkAccent duration-300" to="/contact">Contact</Link>
             </ul>

@@ -1,4 +1,5 @@
 import Bookcard from "./Bookcard";
+import { useOutletContext } from "react-router";
 import SearchBar from "./SearchBar";
 import { books } from "../utils/Mockdata";
 import { useState } from "react";
@@ -7,14 +8,16 @@ import { useState } from "react";
 
 function Booklist() {
 
+    const {booksData} = useOutletContext()
     const [search, setSearch] = useState('')
-    const [filteredBooks, setFilteredBooks] = useState(books)
+    const [filteredBooks, setFilteredBooks] = useState(booksData)
 
 
     function handleClick() {
-        let filtered = books.filter(book => book.title.toLowerCase().includes(search.toLowerCase()))
+        let filtered = booksData.filter(book => book.title.toLowerCase().includes(search.toLowerCase()))
         setFilteredBooks(filtered);
     }
+
 
     return (
         <div className="p-8">
