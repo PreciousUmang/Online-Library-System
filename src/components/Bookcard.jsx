@@ -7,7 +7,7 @@ function Bookcard({ book }) {
                 <img
                     src={book.coverImage}
                     alt={book.title}
-                    className="rounded-md w-full h-48 object-cover"
+                    className="border-2 border-accent rounded-md w-full h-48 object-cover"
                 />
                 <h2 className="mt-4 font-bold text-xl">{book.title}</h2>
                 <p className="text-darkAccent text-sm italic">by {book.author}</p>

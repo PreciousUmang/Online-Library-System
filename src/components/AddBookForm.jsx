@@ -27,7 +27,7 @@ function AddBookForm() {
             alert('Please fill all required fields.');
             return;
         }
-        dispatch(addBook({ ...formData, id: Date.now() }));
+        dispatch(addBook({ ...formData, id: Math.floor(Date.now() / 1000) }));
         navigate('/books');
     };
 
