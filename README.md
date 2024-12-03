@@ -15,13 +15,17 @@ A modern web application built using React to manage and explore books. It featu
    ```bash
    git clone https://github.com/PreciousUmang/Online-Library-System.git
    ```
-
-2. Install dependencies:
+2. Navigate to Project Directory in your Code Editor:
+   ```bash
+   cd /"Project Name"
+```
+   
+3. Install dependencies:
    ```bash
    npm install
    ```
 
-3. Run the app:
+4. Run the app:
    ```bash
-   npm start
+   npm run dev
    ```
